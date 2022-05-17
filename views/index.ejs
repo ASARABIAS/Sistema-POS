@@ -1,125 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href='/stylesheets/style.css'>
+  <%- include("partials/head.ejs") %>
+    <link rel="stylesheet" href='/stylesheets/main-board.css'>
 </head>
+
 <body>
-   <header class="side-bar">
-       <div class="logo-content">
-           <div class="logo">
-               <h3 class="logo-name">
-                Market San Martin
-               </h3>
-           </div>
-           <!--<div class="btn-toggle">
-            <i class='bx bx-menu'></i>
-           </div>-->
-       </div>
 
-       <ul class="nav">
-         <li>
-             <a href="">
-                <i class='bx bxs-pie-chart-alt-2'></i>
-                <span>Ventas</span>
-             </a>
-         
-         </li>
-         <li>
-             <a href="">
-                <i class='bx bxs-color'></i>
-                <span>Productos</span>
-             </a>
-         
-         </li>
-         <li>
-         <a href=""> <i class='bx bxs-group'></i>
-            <span>Provedores</span></a>
-         </li>
-         <li>
-             <a href=""><i class='bx bxs-group'></i><span>Control de ventas</span></a>
-         </li>
-         <li>
-             <a href=""><i class='bx bxs-wrench'></i><span>Configuraciones</span></a>
-         </li>
-       </ul>
-   </header>
+  <!--Header -->
+  <%- include("partials/side-bar.ejs") %>
 
-   <main>
-    <section class="sold">
-        <div class="table">
-            <div class="table_header">
-                <p>Product Details</p>
-                <div> <input placeholder="product" /> <button class="add_new">+ Add New</button> </div>
+    <main>
+
+      <section class="main-board">
+
+        <div class="card">
+          <div>
+            <div class="number">
+              10
             </div>
-            <div class="table_section">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Codigo</th>
-                            <th>Producto</th>
-                            <th>Precio unitario</th>
-                            <th>Cantidad</th>
-                            <th>Precio total</th>
-                            <th>Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td><img src=https://drive.google.com/uc?export=view&id=1oL5yePDRKaJ3rwr2_DedGETXfqtF_gv4 /></td>
-                            <td>Camera</td>
-                            <td>rakhigupta@gmail.com</td>
-                            <td>Rakhi Gupta</td>
-                            <td>  <button><i class='bx bxs-trash'></i></i></button> </td>
-                        </tr>
-                       
-                    </tbody>
-                </table>
+            <div class="cardName">
+              Producto
             </div>
-            <div class="pagination">
-                <button>Cancelar</button>
-                <button>Procesar</button>
-            </div>
+
+          </div>
+          <div class="iconBox">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
         </div>
-    </section>
 
-    <section class="control">
+
+        <div class="card">
+          <div>
+            <div class="number">
+              10
+            </div>
+            <div class="cardName">
+              Producto
+            </div>
+
+          </div>
+          <div class="iconBox">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="number">
+              10
+            </div>
+            <div class="cardName">
+              Producto
+            </div>
+
+          </div>
+          <div class="iconBox">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+        </div>
+
+        <div class="card">
+          <div>
+            <div class="number">
+              10
+            </div>
+            <div class="cardName">
+              Producto
+            </div>
+
+          </div>
+          <div class="iconBox">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+      </section>
+
+      <section class="sold">
+        <div class="table">
+          <div class="table_header">
+            <p>Product Details</p>
+            <div> <input placeholder="product" /> <button class="add_new">+ Add New</button> </div>
+          </div>
+          <div class="table_section">
+            <table>
+              <thead>
+                <tr>
+                  <th>Codigo</th>
+                  <th>Producto</th>
+                  <th>Precio unitario</th>
+                  <th>Cantidad</th>
+                  <th>Precio total</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><img src=https://drive.google.com/uc?export=view&id=1oL5yePDRKaJ3rwr2_DedGETXfqtF_gv4 /></td>
+                  <td>Camera</td>
+                  <td>rakhigupta@gmail.com</td>
+                  <td>Rakhi Gupta</td>
+                  <td> <button><i class='bx bxs-trash'></i></i></button> </td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="pagination">
+            <button>Cancelar</button>
+            <button>Procesar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="control">
         <div class="container">
-            <div class="card">
-              <div class="content">
-                <span class="city">Ventas diaria</span>
-                <h3 class="temp">
-                  13<span class="celsius"><sup>&deg;</sup>c</span>
-                </h3>
-                
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <span class="city">Ventas al mes</span>
-                <h3 class="temp">
-                  24<span class="celsius"><sup>&deg;</sup>c</span>
-                </h3>
-               
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <span class="city">proveedores</span>
-                <h3 class="temp">
-                  16<span class="celsius"><sup>&deg;</sup>c</span>
-                </h3>
-               
-              </div>
+          <div class="card">
+            <div class="content">
+              <span class="city">Ventas diaria</span>
+              <h3 class="temp">
+                13<span class="celsius"><sup>&deg;</sup>c</span>
+              </h3>
+
             </div>
           </div>
-    </section>
-   </main>
-    
+          <div class="card">
+            <div class="content">
+              <span class="city">Ventas al mes</span>
+              <h3 class="temp">
+                24<span class="celsius"><sup>&deg;</sup>c</span>
+              </h3>
+
+            </div>
+          </div>
+          <div class="card">
+            <div class="content">
+              <span class="city">proveedores</span>
+              <h3 class="temp">
+                16<span class="celsius"><sup>&deg;</sup>c</span>
+              </h3>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://kit.fontawesome.com/994fe1cfb9.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>

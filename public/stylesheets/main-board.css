@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+.main-board {
+  width: 100%;
+ 
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  padding-left: 240px;
+  padding-top: 20px;
+}
+
+.main-board .card {
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #00a5ff;
+  position: relative;
+  padding: 15px;
+}
+
+.main-board .card:hover{
+    background: #9b35de;
+}
+
+
+
+
+.main-board .card .number {
+  position: relative;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.main-board .card .cardName{
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.main-board .card .iconBox{
+    font-size: 3.5em;
+
+}
+
+main.cards section.card.contact button {
+  background: linear-gradient(to right, #9f66ff, #dfcbff);
+}
+main.cards section.card.shop button {
+  background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+main.cards section.card.about button {
+  background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+}
+
+main.cards section.card.contact {
+  box-shadow: 20px 20px 50px -30px #dbc4ff;
+}
+main.cards section.card.shop {
+  box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+main.cards section.card.about {
+  box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
