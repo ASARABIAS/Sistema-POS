@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("partials/head.ejs") %>
+        <link rel="stylesheet" href="/stylesheets/product.css">
+</head>
+
+<body>
+    <!--Header -->
+    <%- include("partials/side-bar.ejs") %>
+        <main>
+            <section class="panel">
+                <nav>
+                    <div class="sidebar-button">
+                        <i class="bx bx-menu sidebarBtn"></i>
+                        <span class="dashboard">Panel Admistracion</span>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search..." />
+                        <i class="bx bx-search"></i>
+                    </div>
+                    <div class="profile-details">
+                        <img src="images/profile.jpg" alt="" />
+                        <span class="admin_name">Prem Shahi</span>
+                        <i class="bx bx-chevron-down"></i>
+                    </div>
+                </nav>
+            </section>
+            <section class="title">
+                <div class="cont">
+                    <h2>Productos</h2>
+                </div>
+            </section>
+
+            <section class="new-product">
+                <div class="cont">
+                    <div class="cont-box">
+                        <div class="agg">
+                            <a href="#modal_agg" class="btn">
+                                <span>Agregar Producto</span>
+                            </a>
+    
+                        </div>
+                        <div class="search-box">
+                            <input type="text" placeholder="Search..." />
+                            <i class="bx bx-search"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+               
+            </section>
+            <section id="modal_agg" class="modal-new">
+                <div class="modal__container">
+                    
+                    <h2 class="modal__title">¡Bienvenido al sitio!</h2>
+                    <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis nisi quibusdam doloremque expedita quae ipsam accusamus quisquam quas, culpa tempora. Veniam consectetur deleniti maxime.</p>
+                    <a href="#" class="modal__close">Cerrar Modal</a>
+                </div>
+            </section>
+
+            <section class="table-inv">
+                <div class="cont">
+                    <table class="content-table">
+
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Codigo B</th>
+                                <th>Nombre</th>
+                                <th>Categoria</th>
+                                <th>Proveedor</th>
+                                <th>Precio </th>
+                                <th>Stock</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1234</td>
+                                <td>123455</td>
+                                <td>fdffds</td>
+                                <td>cqaqwd</td>
+                                <td>deefe</td>
+                                <td>efrerf</td>
+                                <td>tregreger</td>
+                                <td>
+                                    <i class='bx bxs-layer-plus'></i>
+                                    <i class='bx bxs-edit'></i>
+                                    <i class='bx bxs-trash'></i>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+            </section>
+
+        </main>
+
+</body>
+
+</html>

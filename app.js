@@ -4,6 +4,7 @@ var cookieParser = require('cookie-parser');
 
 var indexRouter = require('./routes/index');
 let saleRouter = require('./routes/saleRouter');
+let productRouter = require('./routes/productRouter');
 
 var app = express();
 
@@ -16,6 +17,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/ventas',saleRouter);
+app.use('/product',productRouter);
 
 app.listen(3030, () => console.log("Servidor Corriendo en el puerto 3030"));
 
