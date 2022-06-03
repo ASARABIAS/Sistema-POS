@@ -37,10 +37,10 @@
                 <div class="cont">
                     <div class="cont-box">
                         <div class="agg">
-                            <a href="#modal_agg" class="btn">
+                            <a href="#modal-opened" class="btn">
                                 <span>Agregar Producto</span>
                             </a>
-    
+
                         </div>
                         <div class="search-box">
                             <input type="text" placeholder="Search..." />
@@ -50,14 +50,38 @@
                 </div>
 
 
-               
+
             </section>
-            <section id="modal_agg" class="modal-new">
+            <section id="add-product" class="modal-add">
                 <div class="modal__container">
-                    
-                    <h2 class="modal__title">¡Bienvenido al sitio!</h2>
-                    <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis nisi quibusdam doloremque expedita quae ipsam accusamus quisquam quas, culpa tempora. Veniam consectetur deleniti maxime.</p>
-                    <a href="#" class="modal__close">Cerrar Modal</a>
+                    <div class="modal">
+                        <div class="text">
+                            <h1>Agregar Producto</h1>
+                        </div>
+                        <form action="" class="form" method="post">
+                            <input type="text" placeholder="Codigo Barra">
+                            <input type="text" placeholder="Nombre">
+
+                            <select name="" id="" class="select">
+                                <Option value="">Viveres</Option>
+                                <OPtion value="">Carti</OPtion>
+                            </select>
+                            <select name="" id="" class="select">
+                                <Option value="">Viveres</Option>
+                                <OPtion value="">Carti</OPtion>
+                            </select>
+                            <input type="text" placeholder="Precio">
+                            <input type="text" placeholder="Cantidad">
+
+                            <div class="btns">
+                                <a href="">
+                                    <span>cancel</span>
+                                </a>
+                                <input type="submit" value="Añadir">
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
             </section>
 
