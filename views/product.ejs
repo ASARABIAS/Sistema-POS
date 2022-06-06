@@ -1,50 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <!--Incluimos el head de la pagina-->
     <%- include("partials/head.ejs") %>
+    <!--Incluimos los estilo de esta pagina-->
         <link rel="stylesheet" href="/stylesheets/product.css">
 </head>
 
 <body>
-    <!--Header -->
+    <!--Incluimos la barra de navegacion lateral -->
     <%- include("partials/side-bar.ejs") %>
         <main>
-            <section class="panel">
-                <nav>
-                    <div class="sidebar-button">
-                        <i class="bx bx-menu sidebarBtn"></i>
-                        <span class="dashboard">Panel Admistracion</span>
-                    </div>
-                    <div class="search-box">
-                        <input type="text" placeholder="Search..." />
-                        <i class="bx bx-search"></i>
-                    </div>
-                    <div class="profile-details">
-                        <img src="images/profile.jpg" alt="" />
-                        <span class="admin_name">Prem Shahi</span>
-                        <i class="bx bx-chevron-down"></i>
-                    </div>
-                </nav>
-            </section>
+<!--Incluimos el encabezado de la pagina-->
+            <%- include("partials/header.ejs") %>
+            
+            <!--Aqui va el titulo de esta pagina-->
             <section class="title">
-                <div class="cont">
+                
                     <h2>Productos</h2>
-                </div>
+              
             </section>
 
+
+<!--Aqui es donde se va a agregar un nuevo producto-->
             <section class="new-product">
                 <div class="cont">
                     <div class="cont-box">
-                        <div class="agg">
-                            <a href="#modal-opened" class="btn">
+                        <div class="agg"> <!--Aqui va el boton para agregar-->
+                            <a href="#addproduct" class="btn">
                                 <span>Agregar Producto</span>
                             </a>
 
                         </div>
-                        <div class="search-box">
-                            <input type="text" placeholder="Search..." />
-                            <i class="bx bx-search"></i>
+                        <div class="search-box"> <!--En esta parte se podra buscar un producto-->
+                            <input type="text" placeholder="Buscar Producto" />
+                            <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                     </div>
                 </div>
@@ -52,7 +43,7 @@
 
 
             </section>
-            <section id="add-product" class="modal-add">
+            <section id="addproduct" class="modal-add"> <!--Este es el modal para agregar un producto-->
                 <div class="modal__container">
                     <div class="modal">
                         <div class="text">
@@ -85,7 +76,7 @@
                 </div>
             </section>
 
-            <section class="table-inv">
+            <section class="table-inv"> <!--Esta es la tabla en donde se enlistan todos los productos-->
                 <div class="cont">
                     <table class="content-table">
 
@@ -111,9 +102,8 @@
                                 <td>efrerf</td>
                                 <td>tregreger</td>
                                 <td>
-                                    <i class='bx bxs-layer-plus'></i>
-                                    <i class='bx bxs-edit'></i>
-                                    <i class='bx bxs-trash'></i>
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    <i class="fa-solid fa-trash"></i>
                                 </td>
                             </tr>
                         </tbody>

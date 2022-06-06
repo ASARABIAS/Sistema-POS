@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!--Icluimos la parte de head-->
+    <%- include("partials/head.ejs") %>
+        <!--Llamanos a los estilo de la pagina-->
+        <link rel="stylesheet" href="/stylesheets/category.css">
+</head>
+
+<body>
+    <!--Incluimos la barra de navegacion lateral-->
+    <%- include("partials/side-bar.ejs") %>
+
+        <main>
+
+            <!--Incluimos el encabezado de la pagina-->
+            <%- include("partials/header.ejs") %>
+
+                <!--Agregamos la el titulo de este item-->
+                <section class="title">
+                    <h2>Categorias</h2>
+                </section>
+
+                <!--Agregamos la seccion de categoria-->
+                <section class="category">
+                    <!--Aqui se va a listar todas las categorias existentes-->
+                    <div class="cont">
+                        <table class="content-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+
+                                    <th>Nombre</th>
+
+                                    <th>Descripcion</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1234</td>
+
+                                    <td>efrerf</td>
+                                    <td>tregreger</td>
+                                    <td>
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                        <i class="fa-solid fa-trash"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    <!--Aqui se podra registrar una nueva categoria-->
+                    <div class="cont">
+
+                    </div>
+                </section>
+
+        </main>
+
+
+</body>
+
+</html>

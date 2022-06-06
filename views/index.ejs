@@ -1,80 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <%- include("partials/head.ejs") %>
-    <link rel="stylesheet" href="/stylesheets/main-board.css" />
-  </head>
+<html lang="es">
 
-  <body>
-    <!--Header -->
-    <%- include("partials/side-bar.ejs") %>
+<head>
+  <!--Incluimos la parte del head de la pagina-->
+  <%- include("partials/head.ejs") %>
+  <!--INcluimos los estilos de esta pagina-->
+    <link rel="stylesheet" href="/stylesheets/main-board.css" />
+</head>
+
+<body>
+  <!--Incluimos la barra de navegacion lateral-->
+  <%- include("partials/side-bar.ejs") %>
 
     <main>
-      <section class="home-section">
-        <nav>
-          <div class="sidebar-button">
-            <i class="bx bx-menu sidebarBtn"></i>
-            <span class="dashboard">Panel Admistracion</span>
-          </div>
-          <div class="search-box">
-            <input type="text" placeholder="Search..." />
-            <i class="bx bx-search"></i>
-          </div>
-          <div class="profile-details">
-            <img src="images/profile.jpg" alt="" />
-            <span class="admin_name">Prem Shahi</span>
-            <i class="bx bx-chevron-down"></i>
-          </div>
-        </nav>
 
-        <div class="home-content">
-          <div class="overview-boxes">
-            <div class="box">
-              <div class="right-side">
-                <div class="box-topic">Ventas Diaria</div>
-                <div class="number">40,876</div>
-                <div class="indicator">
-                  <i class="fa-solid fa-coins"></i>
-                  <span class="text">Up from yesterday</span>
-                </div>
-              </div>
-              <i class="fa-solid fa-coins"></i>
-            </div>
-            <div class="box">
-              <div class="right-side">
-                <div class="box-topic">Ventas al Mes</div>
-                <div class="number">38,876</div>
-                <div class="indicator">
-                  <i class="bx bx-up-arrow-alt"></i>
-                  <span class="text">Up from yesterday</span>
-                </div>
-              </div>
+      <!--Inluimos el encabezado de la pagina-->
+      <%- include("partials/header.ejs") %>
 
-              <i class="fa-solid two fa-sack-dollar"></i>
-            </div>
-            <div class="box">
-              <div class="right-side">
-                <div class="box-topic">Producto con poco Stock</div>
-                <div class="number">123</div>
-                <div class="indicator">
-                  <i class="bx bx-up-arrow-alt"></i>
-                  <span class="text">Up from yesterday</span>
+      <!--Aqui va el titulo de la pagina-->
+        <section class="title">
+
+          <h2>Panel de administracion</h2>
+
+        </section>
+
+        <!--Aqui va el resumen-->
+        <section class="abstrac">
+          <div class="abs-content"> 
+            <div class="overview-boxes">
+              <div class="box">
+                <div class="right-side"> <!--Aqui va las ventas diarias-->
+                  <div class="box-topic">Ventas Diaria</div>
+                  <div class="number">40,876</div>
+                  <div class="indicator">
+                    <i class="fa-solid fa-coins"></i>
+                    <span class="text">Up from yesterday</span>
+                  </div>
                 </div>
+                <i class="fa-solid fa-coins"></i>
               </div>
-              <i class="fa-solid three fa-cubes-stacked"></i>
-            </div>
-            <div class="box">
-              <div class="right-side">
-                <div class="box-topic">Total Producto</div>
-                <div class="number">11,390</div>
-                <div class="indicator">
-                  <i class="bx bx-down-arrow-alt down"></i>
-                  <span class="text">Down From Today</span>
+              <div class="box">
+                <div class="right-side"><!--aqui va las ventas del mes-->
+                  <div class="box-topic">Ventas al Mes</div>
+                  <div class="number">38,876</div>
+                  <div class="indicator">
+                    <i class="bx bx-up-arrow-alt"></i>
+                    <span class="text">Up from yesterday</span>
+                  </div>
                 </div>
+
+                <i class="fa-solid two fa-sack-dollar"></i>
               </div>
-              <i class="fa-solid four fa-cubes"></i>
+              <div class="box">
+                <div class="right-side"><!--aqui va los productos sin stock-->
+                  <div class="box-topic">Productos agotados</div>
+                  <div class="number">123</div>
+                  <div class="indicator">
+                    <i class="bx bx-up-arrow-alt"></i>
+                    <span class="text">Up from yesterday</span>
+                  </div>
+                </div>
+                <i class="fa-solid three fa-cubes-stacked"></i>
+              </div>
+              <div class="box">
+                <div class="right-side"><!--Aqui va los el total de productos vigentes-->
+                  <div class="box-topic">Total Producto</div>
+                  <div class="number">11,390</div>
+                  <div class="indicator">
+                    <i class="bx bx-down-arrow-alt down"></i>
+                    <span class="text">Down From Today</span>
+                  </div>
+                </div>
+                <i class="fa-solid four fa-cubes"></i>
+              </div>
             </div>
-          </div>
+        </section>
+
+        <section class="home-section">
+
 
           <div class="sales-boxes">
             <div class="recent-sales box">
@@ -194,10 +197,11 @@
               </ul>
             </div>
           </div>
-        </div>
-      </section>
+          </div>
+        </section>
     </main>
 
     <script src="https://kit.fontawesome.com/994fe1cfb9.js" crossorigin="anonymous"></script>
-  </body>
+</body>
+
 </html>

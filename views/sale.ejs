@@ -2,14 +2,124 @@
 <html lang="en">
 <head>
     <%- include("partials/head.ejs") %>
-    <link rel="stylesheet" href="/public/stylesheets/sale.css">
+    <link rel="stylesheet" href="/stylesheets/sale.css">
 </head>
 <body>
     <%- include("partials/side-bar.ejs") %>
-   <main>
-    <section class="sale_section">
-        <h1>aca la parte de ventas</h1>
-    </section>
-   </main>
+    <main>
+        <section class="panel">
+            <nav>
+                <div class="sidebar-button">
+                    <i class="bx bx-menu sidebarBtn"></i>
+                    <span class="dashboard">Panel Admistracion</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." />
+                    <i class="bx bx-search"></i>
+                </div>
+                <div class="profile-details">
+                    <img src="images/profile.jpg" alt="" />
+                    <span class="admin_name">Prem Shahi</span>
+                    <i class="bx bx-chevron-down"></i>
+                </div>
+            </nav>
+        </section>
+        <section class="title">
+            <div class="cont">
+                <h2>Ventas</h2>
+            </div>
+        </section>
+
+        <section class="new-product">
+            <div class="cont">
+                <div class="cont-box">
+                    <div class="search-box">
+                        <input type="text" placeholder="Codigo de barra" />
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </div>
+                    <div class="agg">
+                        <a href="#addproduct" class="btn">
+                            <span>Buscar Producto</span>
+                        </a>
+
+                    </div>
+                    
+                </div>
+            </div>
+
+
+
+        </section>
+        <section id="addproduct" class="modal-add">
+            <div class="modal__container">
+                <div class="modal">
+                    <div class="text">
+                        <h1>Agregar Producto</h1>
+                    </div>
+                    <form action="" class="form" method="post">
+                        <input type="text" placeholder="Codigo Barra">
+                        <input type="text" placeholder="Nombre">
+
+                        <select name="" id="" class="select">
+                            <Option value="">Viveres</Option>
+                            <OPtion value="">Carti</OPtion>
+                        </select>
+                        <select name="" id="" class="select">
+                            <Option value="">Viveres</Option>
+                            <OPtion value="">Carti</OPtion>
+                        </select>
+                        <input type="text" placeholder="Precio">
+                        <input type="text" placeholder="Cantidad">
+
+                        <div class="btns">
+                            <a href="">
+                                <span>cancel</span>
+                            </a>
+                            <input type="submit" value="Añadir">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="table-inv">
+            <div class="cont">
+                <table class="content-table">
+
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Codigo B</th>
+                            <th>Nombre</th>
+                            <th>Cantidad</th>
+                            <th>Valor unitario</th>
+                            <th>Valor a Pagar</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1234</td>
+                            <td>123455</td>
+                            <td>fdffds</td>
+                            <td>cqaqwd</td>
+                            <td>deefe</td>
+                            <td>tregreger</td>
+                            <td>
+                                <i class="fa-solid fa-pen-to-square"></i>
+                                <i class="fa-solid fa-trash"></i>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+                <div class="sale-fuction">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>

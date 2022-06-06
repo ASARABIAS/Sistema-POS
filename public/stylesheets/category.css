@@ -1,0 +1,12 @@
+/* Importamos los estilos generales */
+@import url(global-style.css);
+@import url("table.css");
+
+.category{
+    display: flex;
+}
+
+.category .cont{
+    width: 45%;
+    background: var(--dark-orange);
+}

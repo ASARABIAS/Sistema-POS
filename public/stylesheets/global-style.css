@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-color: rgb(48, 48, 48);
+  --bg-color: rgb(31, 31, 31);
+  --red: #BF1717;
+  --dark-orange: #BF4904;
+  --dark-yellow: #BFA004;
+  --light-yellow: #BFB304;
+  --green: #558C03;
+  --gradient: linear-gradient(45deg, rgba(191,73,4,1) 0%, rgba(191,160,4,1) 35%, rgba(85,140,3,1) 100%);
+  --txt: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,231,0,1) 100%);
+  
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  position: relative;
+  background: #f5f5f5;
+  min-height: 100vh;
+  width: calc(100% - 240px);
+  left: 240px;
+  transition: all 0.5s ease;
+}
+
+.panel nav {
+  display: flex;
+  justify-content: space-between;
+  height: 68px;
+  background: var(--green);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px var(--main-color);
+  transition: all 0.5s ease;
+}
+
+.cont {
+  width: 97%;
+  position: relative;
+  background: #fff;
+  padding: 10px 20px;
+  margin: 15px auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px var(--main-color);
+}
+
+
+
+.title {
+  position: relative;
+  padding-top: 90px;
+  width: 100%;
+  font-size: 30px;
+}
+
+.title h2{
+        text-align: center;
+        font-size: 50px;
+        text-transform: uppercase;
+        background: var(--txt);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+}
